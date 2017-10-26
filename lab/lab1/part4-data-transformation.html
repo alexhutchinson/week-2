@@ -93,14 +93,13 @@
     ===================== */
 
     for(i = 0 ; i < twentyBikes.length; i++){
-       L.marker([twentyBikes[i][1], twentyBikes[i][0]]).addTo(map).bindPopup(twentyBikes[i][2]);
+       L.marker([twentyBikes[i][1], twentyBikes[i][0]]).addTo(map).bindPopup(twentyBikes[i][2])};
 
 
     for(i = 0 ; i < data.length; i++){
        L.marker([data[i][1],data[i][0]]).addTo(map)
-       .bindPopup(data[i][2]);
+       .bindPopup(data[i][2])};
 
-     })
 
     /* =====================
 

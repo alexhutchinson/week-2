@@ -66,6 +66,14 @@
     ===================== */
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 82a7a5c6b0a601e547cfde2d03bdf91becd19896
     /* =====================
 
     End code to filter data
@@ -90,8 +98,15 @@
     Start code to add markers to map
 
     ===================== */
+<<<<<<< HEAD
     for(i = 0 ; i < twentyBikes.length; i++){
        L.marker([twentyBikes[i][1], twentyBikes[i][0]]).addTo(map).bindPopup(twentyBikes[i][2]);
+=======
+
+    for(i = 0 ; i < data.length; i++){
+       L.marker([data[i][1],data[i][0]]).addTo(map)
+       .bindPopup(data[i][2]);
+>>>>>>> 82a7a5c6b0a601e547cfde2d03bdf91becd19896
        }
 
     /* =====================

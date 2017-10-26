@@ -63,9 +63,17 @@
 
     ===================== */
 
-    L.marker([0, 0]).addTo(map);
-    L.marker([0, 0]).addTo(map);
-    L.marker([0, 0]).addTo(map);
+    var restaurantData  = [
+
+          [39.970063, -75.138000, "Paesanos"],
+          [39.953475, -75.159247, "Reading Terminal Market"],
+          [39.947668, -75.168124, "Monks"]
+
+      ];
+
+      for(i = 0 ; i < restaurantData.length; i++){
+         L.marker([restaurantData[i][0], restaurantData[i][1]]).addTo(map).bindPopup(restaurantData[i][2]);
+         }
 
     /* =====================
 
